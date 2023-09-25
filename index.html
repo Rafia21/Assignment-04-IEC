@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO App</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container mt-5">
+        <h2 class="text-center heading-styling">TODO APP</h2>
+        <div class="mb-5 mt-5">
+            <input type="text" id="todoInput" class="form-control" placeholder="Add a new todo">
+            <Alert class="error-message">Please enter a valid todo.</Alert>
+        </div>
+        <div class="input-group">
+            
+            <button id="editTodo" class="btn btn-warning " type="button" style="display: none;">Edit</button>
+            <button id="addTodo" class="btn btn-primary mt-2" type="button">Add</button>
+        </div>
+        <ul class="list-group mt-3" id="todoList">
+            <!-- Todos will be added here -->
+        </ul>
+        <button id="deleteAll" class="btn btn-danger mt-3">Delete All</button>
+    </div>
+
+   
+    <script src="script.js"></script>
+</body>
+</html>
